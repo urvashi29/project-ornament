@@ -4,7 +4,7 @@ import image from "../../images/image.jpeg"
 
 const About = () => {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="clearfix">
                 <p className="column menu">THE TRENDALL RESEARCH CENTRE HAS THE FOLLOWING OBJECTIVES:
                     <br /> <br />
