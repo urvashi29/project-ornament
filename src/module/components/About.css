@@ -26,6 +26,18 @@
       height: 432px;
   }
 
+  @media (min-width: 1400px) {
+    .menu {
+        height: 1000px;
+        font-size: 25px;
+        margin-top: 25px;
+    } 
+
+    .content {
+        background-color: #1E1E1E;
+        margin-top: 25px;
+      }
+}
 
   @media (max-width: 768px) {
     img{
