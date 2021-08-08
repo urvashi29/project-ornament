@@ -65,8 +65,26 @@ img {
 	font-size: 16px;
 }
 
+@media (max-width: 2600px) {
+	#cards {
+		margin: 30px 20px 20px 0;
+	}
+	.inputName:nth-child(1) {
+		margin-left: 180px;
+		width: 620px;
+	}
+	.inputName:nth-child(2) {
+		margin-left: 40px;
+		width: 620px;
+	}
+	.inputName:nth-child(3) {
+		margin-left: 40px;
+		width: 620px;
+		margin-right: 90px;
+	}
+}
 
-@media (max-width: 2300px) {
+@media (max-width: 2309px) {
 	#cards {
 		margin: 30px 20px 20px 0;
 	}
@@ -84,25 +102,6 @@ img {
 		margin-right: 70px;
 	}
 }
-
-/* @media (max-width: 2001px) { */
-	/* #cards {
-		margin: 30px 20px 20px 0;
-	} */
-	/* .inputName:nth-child(1) {
-		margin-left: 160px;
-		width: 500px;
-	}
-	.inputName:nth-child(2) {
-		margin-left: 40px;
-		width: 500px;
-	}
-	.inputName:nth-child(3) {
-		margin-left: 40px;
-		width: 500px;
-		margin-right: 70px;
-	}
-} */
 
 
 @media (max-width: 2000px) {
@@ -178,11 +177,7 @@ img {
 		width: 350px;
 	}
 }
-/* @media (min-width: 1024px) {
-	#cards {
-		margin-left: 30px;
-	}
-} */
+
 
 @media (max-width: 1329px) {
 	#cards {
@@ -218,7 +213,7 @@ img {
 
 @media (max-width: 992px) {
 	#cards {
-		margin-left: 50px;
+		margin-left: 20px;
 	}
 	.inputName:nth-child(1) {
 		/* margin-left: 40px; */
@@ -271,7 +266,7 @@ img {
 
 @media (max-width: 600px) {
 	#cards {
-		margin-left: 50px;
+		margin-left: 20px;
 	}
 	.inputName:nth-child(1) {
 		margin-left:20px;
