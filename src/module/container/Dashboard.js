@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import './Dashboard.css';
-
 class Dashboard extends Component {
     render() {
         return (
