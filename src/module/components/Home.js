@@ -1,10 +1,10 @@
 import React from "react";
-import image1 from "../../images/Project-01.jpg";
+import image1 from "../../images/P-13-3.jpg";
 import "./Home.css";
-import image2 from "../../images/Project-02.jpg";
-import image3 from "../../images/Project-03.jpg";
-import image4 from "../../images/Project-04.jpg";
-import image5 from "../../images/Project-05.jpg";
+import image2 from "../../images/P.jpg";
+import image3 from "../../images/P-19-1.jpg";
+import image4 from "../../images/P-26.jpg";
+import image5 from "../../images/P-35-3.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 

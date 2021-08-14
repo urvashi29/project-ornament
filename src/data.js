@@ -1,5 +1,4 @@
-import profile from '../src/images/pottery.jpg';
-import imgOne from '../src/images/Project-01.jpg';
+import imgOne from '../src/images/P-13-3.jpg';
 
 const details = [
 	{

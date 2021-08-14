@@ -58,6 +58,7 @@ img {
 }
 .container-fluid {
 	display: inline-block;
+	text-align: center;
   }
 
 .card-title {
@@ -67,7 +68,6 @@ img {
 #card-text {
 	font-size: 16px;
 }
-
 
 @media (max-width: 2700px) {
 	#cards {

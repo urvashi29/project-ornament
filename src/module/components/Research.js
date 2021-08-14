@@ -35,9 +35,8 @@ class Research extends Component {
             );
         })) : (<p>No Posts Yet!</p>) 
         return (
-
             <div className="container-fluid">
-                <h2>Seach Database</h2>
+                <h2>Search Database</h2>
                 <div id="searchBar">
                     <input
                         className="inputName"
@@ -55,6 +54,7 @@ class Research extends Component {
                         placeholder="Search for Painter"
                     />
                 </div>
+                
                 <div>{detailsList}</div>
             </div>
 
