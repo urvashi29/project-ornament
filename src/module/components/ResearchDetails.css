@@ -1,8 +1,62 @@
 .container {
     margin-top: 20px;
-    text-align:  center;
+    /* text-align:  center; */
+    display: inline-block;
 }
 
-img{
-    width: 300px;
+
+.content-style {
+    float: left;
+    margin-left: 40px;
+    height: 350px;
+}
+
+.img-style {
+    float: left;
+    margin-left: 50px;
+    height: 350px;
+    width: 200px;
+}
+
+.content-style table {
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+
+tr td:nth-child(1) {
+    width: 200px;
+    text-align: left;
+    margin: 2px;
+}
+
+tr td:nth-child(2) {
+    width: 620px;
+    text-align: left;
+    padding: 10px;
+}
+
+tr td:nth-child(2) span {
+    margin-right: 6px;
+}
+
+.download-button {
+    color: #F0AA11;
+    text-align: center;
+    background-color: #1E1E1E;
+    border-radius: 20px;
+    border: none;
+    height: 50px;
+    font-weight: bold;
+    font-size: 17px;
+    width: 220px;
+}
+
+.button-placement {
+    text-align: right;
+    margin-top: 40px;
+}
+
+.download-button:hover {
+    background-color: black;
 }

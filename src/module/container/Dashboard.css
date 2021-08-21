@@ -21,6 +21,7 @@
 
 .nav-item:hover {
     color: white;
+    text-decoration: none;
 }
 
 .active {
