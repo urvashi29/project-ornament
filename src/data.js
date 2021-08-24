@@ -1,4 +1,8 @@
 import imgOne from '../src/images/P-13-3.jpg';
+import imgTwo from '../src/images/P-19-1.jpg';
+import imgThree from '../src/images/P-26.jpg';
+import imgFour from '../src/images/P-35-3.jpg';
+import imgFive from '../src/images/P-56-1.jpg';
 
 const details = [
 	{
@@ -14,7 +18,7 @@ const details = [
 	},
 	{
 		name: "name",
-		img: imgOne,
+		img: imgTwo,
 		shape: "Alabastron",
 		location: "Turkey, Asia Minor",
 		citationNumber: 2,
@@ -24,7 +28,7 @@ const details = [
 	},
 	{
 		name: "name",
-		img: imgOne,
+		img: imgThree,
 		shape: "Alabastron",
 		location: "London, British museum",
 		citationNumber: 3,
@@ -35,8 +39,8 @@ const details = [
 	},
 	{
 		name: "name",
-		img: imgOne,
-		Shape: "Alabastron",
+		img: imgFour,
+		shape: "Alabastron",
 		location: "Italy, spina",
 		citationNumber: 4,
 		vaseNumber: 4974,
@@ -46,7 +50,7 @@ const details = [
 	},
 	{
 		name: "name",
-		img: imgOne,
+		img: imgFive,
 		shape: "Alabastron",
 		location: "Geneva, Musée d'Art et d'Histoire",
 		citationNumber: 5,
@@ -67,7 +71,7 @@ const details = [
 	},
 	{
 		name: "name",
-		img: imgOne,
+		img: imgTwo,
 		shape: "Alabastron",
 		location: "London, market, Ede",
 		citationNumber: 7,
@@ -78,7 +82,7 @@ const details = [
 	},
 	{
 		name: "name",
-		img: imgOne,
+		img: imgThree,
 		shape: "Alabastron",
 		location: "london, market, sotheby's",
 		citationNumber: 8,
@@ -87,7 +91,7 @@ const details = [
 		reference: "PHOTOGRAPH(S) IN THE BEAZLEY ARCHIVE: 7 Sotheby, sale catalogue: 11 - 12.7.1983, 97, NO.314(COLOUR)Sotheby, sale catalogue: 14 - 15.12.1981, 133, NO.347(COLOUR)"
 	}, {
 		name: "name",
-		img: imgOne,
+		img: imgFour,
 		shape: "Alabastron",
 		location: "Berlin, Schloss Charlottenburg",
 		citationNumber: 9,
@@ -98,7 +102,7 @@ const details = [
 	},
 	{
 		name: "name",
-		img: imgOne,
+		img: imgFive,
 		shape: "Alabastron",
 		location: "Italy, Sicily, selinus",
 		citationNumber: 10,

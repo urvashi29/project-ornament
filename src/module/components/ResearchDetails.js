@@ -6,8 +6,8 @@ const ResearchDetails = (props) => {
   let id = props.match.params.citationNumber
   const post = details.map(info => {
     return (
-      <div className="container" key={info.citationNumber}>
-        {info.citationNumber == id ? (<div>
+      <div key={info.citationNumber}>
+        {info.citationNumber == id ? (<div className="container" >
           <img src={info.img} className="img-style" />
           <div className="content-style">
             <table>

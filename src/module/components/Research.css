@@ -1,5 +1,5 @@
 #cards {
-	height: 470px;
+	height: 440px;
 	width: 270px;
 	margin: 30px 20px 20px 0;
 	float: left;
@@ -308,7 +308,7 @@ img {
 @media (max-width: 400px) {
 	#cards {
 	    width: 250px;
-		height: 490px;
+		height: 460px;
 	}
 	.inputName:nth-child(1) {
 		margin-left: 20px;
@@ -317,7 +317,7 @@ img {
 
 @media (max-width: 290px) {
 	#cards {
-	    width: 180px;
+	    width: 160px;
 		height: 500px;
 	}
 	.inputName:nth-child(1) {

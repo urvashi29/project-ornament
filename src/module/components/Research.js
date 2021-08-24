@@ -17,7 +17,7 @@ class Research extends Component {
                 <div className="card" key={info.citationNumber} id="cards">
                     <img src={info.img} className="card-img-top" alt="profile" />
                     <div className="card-body" id="card-text">
-                        <h5 className="card-title">{info.name}</h5>
+                {/*<h5 className="card-title">{info.name}</h5> */}
                         Shape: {info.shape}
                         <br />
                         Vase Number: {info.vaseNumber}

@@ -7,7 +7,6 @@ import image4 from "../../images/P-26.jpg";
 import image5 from "../../images/P-35-3.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import Footer from "../container/Footer";
 
 const Home = () => {
   const arr = [image1, image2, image3, image3, image4, image5];

@@ -1,7 +1,8 @@
 .container {
     margin-top: 20px;
-    /* text-align:  center; */
+    text-align:  center;
     display: inline-block;
+    margin-bottom: 40px;
 }
 
 
@@ -15,7 +16,7 @@
     float: left;
     margin-left: 50px;
     height: 350px;
-    width: 200px;
+    width: 240px;
 }
 
 .content-style table {
@@ -31,7 +32,7 @@ tr td:nth-child(1) {
 }
 
 tr td:nth-child(2) {
-    width: 620px;
+    width: 580px;
     text-align: left;
     padding: 10px;
 }
@@ -59,4 +60,19 @@ tr td:nth-child(2) span {
 
 .download-button:hover {
     background-color: black;
-}
+} 
+
+@media (max-width: 700px) {
+    .container {
+
+        height: 800px;
+    }
+    
+  }
+
+  @media (max-width: 400px) {
+    .container {
+        height: 1000px;
+    }
+    
+  }
