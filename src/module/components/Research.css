@@ -1,8 +1,29 @@
 #cards {
-	height: 440px;
-	width: 270px;
+	height: 370px;
+	width: 220px;
 	margin: 30px 20px 20px 0;
 	float: left;
+}
+
+img {
+	height: 250px;
+	width: 200px;
+}
+
+.card-body {
+	text-align: center;
+}
+
+#button {
+	margin-top: 7px;
+}
+
+.card-title {
+	font-weight: bold;
+}
+
+#card-text {
+	font-size: 14px;
 }
 
 h2 {
@@ -12,79 +33,50 @@ h2 {
 	font-weight: bold;
 }
 
-.card-body {
+.search-div {
 	text-align: center;
 }
 
-img {
-	height: 300px;
-}
-
-#button {
-	margin-top: 10px;
-}
-
-.inputName:nth-child(1) {
-	font-size: 17px;
-	width: 300px;
-	border-radius: 10px;
+.search-div button {
+	font-weight: bold;
+	border: none;
 	margin-top: 20px;
-	float: left;
-	margin-left:120px;
-	color: black;
-	padding-left: 15px;
 }
 
-.inputName:nth-child(2) {
-	font-size: 17px;
-	width: 300px;
-	border-radius: 10px;
-	margin-top: 20px;
-	float: left;
-	margin-left:20px;
-	color: black;
-	padding-left: 15px;
+.btn-group {
+	  margin-top: 30px;
 }
 
-.inputName:nth-child(3) {
-	font-size: 17px;
-	width: 300px;
-	border-radius: 10px;
-	margin-top: 20px;
-	float: left;
-	margin-left:20px;
-	color: black;
-	padding-left: 15px;
+.left-div {
+	text-align: left;
 }
-.container-fluid {
-	display: inline-block;
-	text-align: center;
+
+::marker {
+	font-size: 24px;
+}
+
+.dropdown-item:active {
+	background-color: #F0AA11;
+}
+
+.dropdown-item:hover {
+	background-color: #F0AA11;
+}
+
+  .search-items {
+	  color: white;
+	  font-weight: bolder;
+	  margin-right: 30px;
+	  font-size: 18px;
   }
 
-.card-title {
-	font-weight: bold;
-}
-
-#card-text {
-	font-size: 16px;
-}
+  .div-right {
+	  text-align: right;
+  }
 
 @media (max-width: 2700px) {
 	#cards {
 		margin: 30px 20px 20px 0;
-	}
-	.inputName:nth-child(1) {
-		margin-left: 180px;
-		width: 670px;
-	}
-	.inputName:nth-child(2) {
-		margin-left: 40px;
-		width: 670px;
-	}
-	.inputName:nth-child(3) {
-		margin-left: 40px;
-		width: 670px;
-		margin-right: 90px;
 	}
 	
 }
@@ -93,37 +85,11 @@ img {
 	#cards {
 		margin: 30px 20px 20px 0;
 	}
-	.inputName:nth-child(1) {
-		margin-left: 180px;
-		width: 620px;
-	}
-	.inputName:nth-child(2) {
-		margin-left: 40px;
-		width: 620px;
-	}
-	.inputName:nth-child(3) {
-		margin-left: 40px;
-		width: 620px;
-		margin-right: 90px;
-	}
 }
 
 @media (max-width: 2309px) {
 	#cards {
 		margin: 30px 20px 20px 0;
-	}
-	.inputName:nth-child(1) {
-		margin-left: 180px;
-		width: 560px;
-	}
-	.inputName:nth-child(2) {
-		margin-left: 40px;
-		width: 550px;
-	}
-	.inputName:nth-child(3) {
-		margin-left: 40px;
-		width: 550px;
-		margin-right: 70px;
 	}
 }
 
@@ -132,36 +98,11 @@ img {
 	#cards {
 		margin: 30px 20px 20px 0;
 	}
-	.inputName:nth-child(1) {
-		margin-left: 160px;
-		width: 470px;
-	}
-	.inputName:nth-child(2) {
-		margin-left: 40px;
-		width: 470px;
-	}
-	.inputName:nth-child(3) {
-		margin-left: 40px;
-		width: 470px;
-		margin-right: 70px;
-	}
 }
 
 @media (max-width: 1789px) {
 	#cards {
 		margin: 30px 20px 20px 0;
-	}
-	.inputName:nth-child(1) {
-		margin-left: 90px;
-		width: 420px;
-	}
-	.inputName:nth-child(2) {
-		margin-left: 40px;
-		width: 420px;
-	}
-	.inputName:nth-child(3) {
-		margin-left: 40px;
-		width: 420px;
 	}
 }
 
@@ -170,35 +111,11 @@ img {
 	#cards {
 		margin: 30px 20px 20px 0;
 	}
-	.inputName:nth-child(1) {
-		margin-left: 80px;
-		width: 400px;
-	}
-	.inputName:nth-child(2) {
-		margin-left: 30px;
-		width: 400px;
-	}
-	.inputName:nth-child(3) {
-		margin-left: 30px;
-		width: 400px;
-	}
 }
 
 @media (max-width: 1480px) {
 	#cards {
 		margin: 30px 20px 20px 0;
-	}
-	.inputName:nth-child(1) {
-		margin-left: 80px;
-		width: 350px;
-	}
-	.inputName:nth-child(2) {
-		margin-left: 30px;
-		width: 350px;
-	}
-	.inputName:nth-child(3) {
-		margin-left: 30px;
-		width: 350px;
 	}
 }
 
@@ -207,31 +124,11 @@ img {
 	#cards {
 		margin-left: 30px;
 	}
-	.inputName:nth-child(1) {
-		margin-left: 40px;
-		width:310px;
-	}
-	.inputName:nth-child(2) {
-		width: 310px;
-	}
-	.inputName:nth-child(3) {
-		width: 310px;
-	}
 }
 
 @media (max-width: 1130px) {
 	#cards {
 		margin-left: 30px;
-	}
-	.inputName:nth-child(1) {
-		margin-left: 20px;
-		width: 270px;
-	}
-	.inputName:nth-child(2) {
-		width: 270px;
-	}
-	.inputName:nth-child(3) {
-		width: 270px;
 	}
 }
 
@@ -239,51 +136,17 @@ img {
 	#cards {
 		margin-left: 20px;
 	}
-	.inputName:nth-child(1) {
-		/* margin-left: 40px; */
-		width: 200px;
-	}
-	.inputName:nth-child(2) {
-		width: 200px;
-	}
-	.inputName:nth-child(3) {
-		width: 200px;
-	}
 }
 
 @media (max-width: 786px) {
 	#cards {
 		margin-left: 20px;
 	}
-	.inputName:nth-child(1) {
-		margin-left: 0px;
-		width: 170px;
-	}
-	.inputName:nth-child(2) {
-		margin-left: 5px;
-		width: 170px;
-	}
-	.inputName:nth-child(3) {
-		margin-left: 5px;
-		width: 170px;
-	}
 }
 
 @media (max-width: 639px) {
 	#cards {
 		margin-left: 20px;
-	}
-	.inputName:nth-child(1) {
-		margin-left: 0px;
-		width: 165px;
-	}
-	.inputName:nth-child(2) {
-		margin-left: 5px;
-		width: 165px;
-	}
-	.inputName:nth-child(3) {
-		margin-left: 5px;
-		width: 165px;
 	}
 }
 
@@ -292,43 +155,14 @@ img {
 	#cards {
 		margin-left: 20px;
 	}
-	.inputName:nth-child(1) {
-		margin-left:20px;
-	}
-	.inputName:nth-child(2) {
-		margin-left:20px;
-		width: 180px;
-	}
-	.inputName:nth-child(3) {
-		margin-left:20px;
-		width: 180px;
-	}
 }
 
 @media (max-width: 400px) {
-	#cards {
-	    width: 250px;
-		height: 460px;
-	}
-	.inputName:nth-child(1) {
-		margin-left: 20px;
-	}
+
 }
 
 @media (max-width: 290px) {
-	#cards {
-	    width: 160px;
-		height: 500px;
-	}
-	.inputName:nth-child(1) {
-		width: 200px;
-	}
-	.inputName:nth-child(2) {
-		width: 200px;
-	}
-	.inputName:nth-child(3) {
-		width: 200px;
-	}
+
 }
 
 
