@@ -1,9 +1,11 @@
 import React from "react";
 import details from "../../data";
+import Download from "./Download";
 import './ResearchDetails.css';
 
 const ResearchDetails = (props) => {
-  let id = props.match.params.citationNumber
+  let id = props.match.params.citationNumber;
+
   const post = details.map(info => {
     return (
       <div key={info.citationNumber}>
@@ -16,8 +18,8 @@ const ResearchDetails = (props) => {
                 <td><span>: </span>{info.shape}</td>
               </tr>
               <tr>
-                  <td>Vase Number</td>
-                  <td><span>:</span>{info.vaseNumber}</td>
+                <td>Vase Number</td>
+                <td><span>:</span>{info.vaseNumber}</td>
               </tr>
               <tr>
                 <td>Location</td>
@@ -32,12 +34,15 @@ const ResearchDetails = (props) => {
                 <td><span>: </span>{info.reference}</td>
               </tr>
             </table>
-            <div className="button-placement"><button  className="download-button">DOWNLOAD COPY</button></div>
+            <div className="button-placement">
+              <Download data={info} />
+            </div>
           </div>
-        </div>) : (<></>)}
+        </div>) : (<React.Fragment></React.Fragment>)}
       </div>
     )
   });
+
 
   return (
     <div style={{ color: "white" }}>
