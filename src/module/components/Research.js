@@ -13,7 +13,34 @@ const list = [{
     })
 }, {
     detail: details.map(data => {
-        return (data.name)
+        return (data.painter)
+    })
+},
+
+{
+    detail: details.map(data => {
+        return (data.subject)
+    })
+},
+{
+    detail: details.map(data => {
+        return (data.technique)
+    })
+}, {
+    detail: details.map(data => {
+        return (data.subTechnique)
+    })
+}, {
+    detail: details.map(data => {
+        return (data.incription)
+    })
+}, {
+    detail: details.map(data => {
+        return (data.collection)
+    })
+}, {
+    detail: details.map(data => {
+        return (data.date)
     })
 }]
 
@@ -24,7 +51,13 @@ class Research extends Component {
             details: details,
             shape: '',
             location: '',
-            painter: ''
+            painter: '',
+            subject: '',
+            technique: '',
+            subTechnique: '',
+            incription: '',
+            collection: '',
+            date: ''
         }
     }
 
@@ -40,7 +73,6 @@ class Research extends Component {
                 <div className="card" key={info.citationNumber} id="cards">
                     <img src={info.img} className="card-img-top" alt="profile" />
                     <div className="card-body" id="card-text">
-                        {/*<h5 className="card-title">{info.name}</h5> */}
                         Shape: {info.shape}
                         <br />
                         Vase Number: {info.vaseNumber}
@@ -62,6 +94,7 @@ class Research extends Component {
                 <div className="row">
                     <div className="col-sm-5 col-md-8 col-lg-4 col-xl-4">
                         <h2>SEARCH DATABASE</h2>
+                        {/*shape */}
                         <div className="left-div">
                             <div className="btn-group">
                                 <ul>
@@ -80,7 +113,8 @@ class Research extends Component {
                                         )
                                     })}
                                 </div>
-                            </div>
+                            </div>\
+                            {/*location */}
                             <div className="btn-group">
                                 <ul>
                                     <li className="search-items">
@@ -103,6 +137,7 @@ class Research extends Component {
                                     })}
                                 </div>
                             </div>
+                            {/*painter */}
                             <div className="btn-group">
                                 <ul>
                                     <li className="search-items">
@@ -122,6 +157,157 @@ class Research extends Component {
                                     })}
                                 </div>
                             </div>
+                            <br />
+
+                            {/*subject */}
+                            <div className="btn-group">
+                                <ul>
+                                    <li className="search-items">
+                                        SUBJECT
+                                    </li>
+                                </ul>
+                                <div className="div-right">
+                                    <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
+                                        {this.state.subject !== '' ? (this.state.subject) : (<React.Fragment>{list[3].detail[0]}</React.Fragment>)}
+                                    </button>
+                                </div>
+
+                                <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', borderLeft: 'none' }} className="btn btn-secondary btn-lg  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                                </button>
+                                <div className="dropdown-menu">
+                                    {list[3].detail.map(val => {
+                                        return (
+                                            <a className="dropdown-item" id="subject" onClick={this.handleClick}>{val}</a>
+                                        )
+                                    })}
+                                </div>
+                            </div>
+                            <br />
+
+                            {/*technique */}
+                            <div className="btn-group">
+                                <ul>
+                                    <li className="search-items">
+                                        TECHNIQUE
+                                    </li>
+                                </ul>
+                                <div className="div-right">
+                                    <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
+                                        {this.state.technique !== '' ? (this.state.technique) : (<React.Fragment>{list[4].detail[0]}</React.Fragment>)}
+                                    </button>
+                                </div>
+
+                                <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', borderLeft: 'none' }} className="btn btn-secondary btn-lg  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                                </button>
+                                <div className="dropdown-menu">
+                                    {list[4].detail.map(val => {
+                                        return (
+                                            <a className="dropdown-item" id="technique" onClick={this.handleClick}>{val}</a>
+                                        )
+                                    })}
+                                </div>
+                            </div>
+                            <br />
+
+                            {/*sub techniques */}
+
+                            <div className="btn-group">
+                                <ul>
+                                    <li className="search-items">
+                                        SUB TECHNIQUE
+                                    </li>
+                                </ul>
+                                <div className="div-right">
+                                    <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
+                                        {this.state.subTechnique !== '' ? (this.state.subTechnique) : (<React.Fragment>{list[5].detail[0]}</React.Fragment>)}
+                                    </button>
+                                </div>
+
+                                <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', borderLeft: 'none' }} className="btn btn-secondary btn-lg  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                                </button>
+                                <div className="dropdown-menu">
+                                    {list[5].detail.map(val => {
+                                        return (
+                                            <a className="dropdown-item" id="subTechnique" onClick={this.handleClick}>{val}</a>
+                                        )
+                                    })}
+                                </div>
+                            </div>
+                            <br />
+                            {/*incription */}
+                            <div className="btn-group">
+                                <ul>
+                                    <li className="search-items">
+                                        INCRIPTION
+                                    </li>
+                                </ul>
+                                <div className="div-right">
+                                    <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
+                                        {this.state.incription !== '' ? (this.state.incription) : (<React.Fragment>{list[6].detail[0]}</React.Fragment>)}
+                                    </button>
+                                </div>
+
+                                <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', borderLeft: 'none' }} className="btn btn-secondary btn-lg  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                                </button>
+                                <div className="dropdown-menu">
+                                    {list[6].detail.map(val => {
+                                        return (
+                                            <a className="dropdown-item" id="incription" onClick={this.handleClick}>{val}</a>
+                                        )
+                                    })}
+                                </div>
+                            </div>
+                            <br />
+
+                            {/*collection */}
+                            <div className="btn-group">
+                                <ul>
+                                    <li className="search-items">
+                                        COLLECTION
+                                    </li>
+                                </ul>
+                                <div className="div-right">
+                                    <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
+                                        {this.state.collection !== '' ? (this.state.collection) : (<React.Fragment>{list[7].detail[0]}</React.Fragment>)}
+                                    </button>
+                                </div>
+
+                                <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', borderLeft: 'none' }} className="btn btn-secondary btn-lg  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                                </button>
+                                <div className="dropdown-menu">
+                                    {list[7].detail.map(val => {
+                                        return (
+                                            <a className="dropdown-item" id="collection" onClick={this.handleClick}>{val}</a>
+                                        )
+                                    })}
+                                </div>
+                            </div>
+                            <br />
+
+                            {/*date */}
+                            <div className="btn-group">
+                                <ul>
+                                    <li className="search-items">
+                                        DATE
+                                    </li>
+                                </ul>
+                                <div className="div-right">
+                                    <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
+                                        {this.state.date !== '' ? (this.state.date) : (<React.Fragment>{list[8].detail[0]}</React.Fragment>)}
+                                    </button>
+                                </div>
+
+                                <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', borderLeft: 'none' }} className="btn btn-secondary btn-lg  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                                </button>
+                                <div className="dropdown-menu">
+                                    {list[8].detail.map(val => {
+                                        return (
+                                            <a className="dropdown-item" id="date" onClick={this.handleClick}>{val}</a>
+                                        )
+                                    })}
+                                </div>
+                            </div>
+
                             <br />
                         </div>
                         <div className="search-div">
