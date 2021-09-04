@@ -44,6 +44,12 @@ const list = [{
     })
 }]
 
+const searchFor = (shape, location, painter) => {
+    return (x) => {
+        return (x.location.startsWith(location) || !location) && (x.shape.startsWith(shape) || !shape) && (x.painter.startsWith(painter) || !painter);
+    }
+}
+
 class Research extends Component {
     constructor() {
         super();
@@ -63,12 +69,17 @@ class Research extends Component {
 
     handleClick = (e) => {
         this.setState({
-            [e.target.id]: e.target.innerHTML
+            [e.target.id]: e.target.innerText
         })
     }
 
+
     render() {
-        const detailsList = details.length ? (details.map((info) => {
+        const { shape,
+            location,
+            painter } = this.state;
+
+        const detailsList = details.length ? (details.filter(searchFor(shape, location, painter)).map((info) => {
             return (
                 <div className="card" key={info.citationNumber} id="cards">
                     <img src={info.img} className="card-img-top" alt="profile" />
@@ -94,8 +105,8 @@ class Research extends Component {
                 <div className="row">
                     <div className="col-sm-5 col-md-8 col-lg-4 col-xl-4">
                         <h2>SEARCH DATABASE</h2>
-                        {/*shape */}
                         <div className="left-div">
+                             {/*shape */}
                             <div className="btn-group">
                                 <ul>
                                     <li className="search-items">
@@ -234,6 +245,7 @@ class Research extends Component {
                                 </div>
                             </div>
                             <br />
+
                             {/*incription */}
                             <div className="btn-group">
                                 <ul>

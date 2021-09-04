@@ -18,6 +18,10 @@ const ResearchDetails = (props) => {
                 <td><span>: </span>{info.shape}</td>
               </tr>
               <tr>
+                <td>Painter </td>
+                <td><span>: </span>{info.painter}</td>
+              </tr>
+              <tr>
                 <td>Vase Number</td>
                 <td><span>:</span>{info.vaseNumber}</td>
               </tr>
