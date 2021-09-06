@@ -44,9 +44,9 @@ const list = [{
     })
 }]
 
-const searchFor = (shape, location, painter) => {
+const searchFor = (shape, location, painter, technique, subTechnique, incription, date, collection, subject) => {
     return (x) => {
-        return (x.location.startsWith(location) || !location) && (x.shape.startsWith(shape) || !shape) && (x.painter.startsWith(painter) || !painter);
+        return (x.location.startsWith(location) || !location) && (x.shape.startsWith(shape) || !shape) && (x.painter.startsWith(painter) || !painter) && (x.technique.startsWith(technique) || !technique)  && (x.subTechnique.startsWith(subTechnique) || !subTechnique)  && (x.subject.startsWith(subject) || !subject)  && (x.collection.startsWith(collection) || !collection)  && (x.incription.startsWith(incription) || !incription) && (x.date.startsWith(date) || !date);
     }
 }
 
@@ -77,9 +77,9 @@ class Research extends Component {
     render() {
         const { shape,
             location,
-            painter } = this.state;
+            painter, technique,subTechnique, incription, date, collection, subject } = this.state;
 
-        const detailsList = details.length ? (details.filter(searchFor(shape, location, painter)).map((info) => {
+        const detailsList = details.length ? (details.filter(searchFor(shape, location, painter, technique,subTechnique, incription, date, collection, subject)).map((info) => {
             return (
                 <div className="card" key={info.citationNumber} id="cards">
                     <img src={info.img} className="card-img-top" alt="profile" />

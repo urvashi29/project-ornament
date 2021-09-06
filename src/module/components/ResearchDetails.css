@@ -2,7 +2,7 @@
     margin-top: 20px;
     text-align:  center;
     display: inline-block;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 
@@ -50,13 +50,11 @@ tr td:nth-child(2) span {
     height: 50px;
     font-weight: bold;
     font-size: 17px;
+    float: right;
     width: 220px;
+    margin-top: 10px;
 }
 
-.button-placement {
-    text-align: right;
-    margin-top: 40px;
-}
 
 .download-button:hover {
     background-color: black;
