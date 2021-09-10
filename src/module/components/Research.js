@@ -136,7 +136,7 @@ class Research extends Component {
                                 <div className="dropdown-menu">
                                     {list[0].detail.map(val => {
                                         return (
-                                            <a className="dropdown-item" id="shape" onClick={this.handleClick}>{val}</a>
+                                            <li className="dropdown-item" id="shape" onClick={this.handleClick}>{val}</li>
                                         )
                                     })}
                                 </div>
@@ -159,7 +159,7 @@ class Research extends Component {
                                 <div className="dropdown-menu">
                                     {list[1].detail.map(val => {
                                         return (
-                                            <a className="dropdown-item" id="location" onClick={this.handleClick}>{val}</a>
+                                            <li className="dropdown-item" id="location" onClick={this.handleClick}>{val}</li>
                                         )
                                     })}
                                 </div>
@@ -181,7 +181,7 @@ class Research extends Component {
                                 <div className="dropdown-menu">
                                     {list[2].detail.map(val => {
                                         return (
-                                            <a className="dropdown-item" id="painter" onClick={this.handleClick}>{val}</a>
+                                            <li className="dropdown-item" id="painter" onClick={this.handleClick}>{val}</li>
                                         )
                                     })}
                                 </div>
@@ -206,7 +206,7 @@ class Research extends Component {
                                 <div className="dropdown-menu">
                                     {list[3].detail.map(val => {
                                         return (
-                                            <a className="dropdown-item" id="subject" onClick={this.handleClick}>{val}</a>
+                                            <li className="dropdown-item" id="subject" onClick={this.handleClick}>{val}</li>
                                         )
                                     })}
                                 </div>
@@ -231,7 +231,7 @@ class Research extends Component {
                                 <div className="dropdown-menu">
                                     {list[4].detail.map(val => {
                                         return (
-                                            <a className="dropdown-item" id="technique" onClick={this.handleClick}>{val}</a>
+                                            <li className="dropdown-item" id="technique" onClick={this.handleClick}>{val}</li>
                                         )
                                     })}
                                 </div>
@@ -257,7 +257,7 @@ class Research extends Component {
                                 <div className="dropdown-menu">
                                     {list[5].detail.map(val => {
                                         return (
-                                            <a className="dropdown-item" id="subTechnique" onClick={this.handleClick}>{val}</a>
+                                            <li className="dropdown-item" id="subTechnique" onClick={this.handleClick}>{val}</li>
                                         )
                                     })}
                                 </div>
@@ -282,7 +282,7 @@ class Research extends Component {
                                 <div className="dropdown-menu">
                                     {list[6].detail.map(val => {
                                         return (
-                                            <a className="dropdown-item" id="incription" onClick={this.handleClick}>{val}</a>
+                                            <li className="dropdown-item" id="incription" onClick={this.handleClick}>{val}</li>
                                         )
                                     })}
                                 </div>
@@ -307,7 +307,7 @@ class Research extends Component {
                                 <div className="dropdown-menu">
                                     {list[7].detail.map(val => {
                                         return (
-                                            <a className="dropdown-item" id="collection" onClick={this.handleClick}>{val}</a>
+                                            <li className="dropdown-item" id="collection" onClick={this.handleClick}>{val}</li>
                                         )
                                     })}
                                 </div>
@@ -332,7 +332,7 @@ class Research extends Component {
                                 <div className="dropdown-menu">
                                     {list[8].detail.map(val => {
                                         return (
-                                            <a className="dropdown-item" id="date" onClick={this.handleClick}>{val}</a>
+                                            <li className="dropdown-item" id="date" onClick={this.handleClick}>{val}</li>
                                         )
                                     })}
                                 </div>

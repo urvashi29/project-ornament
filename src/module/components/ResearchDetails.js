@@ -9,8 +9,8 @@ const ResearchDetails = (props) => {
   const post = details.map(info => {
     return (
       <div key={info.citationNumber}>
-        {info.citationNumber == id ? (<div className="container" >
-          <img src={info.img} className="img-style" />
+        {info.citationNumber === Number(id) ? (<div className="container" >
+          <img src={info.img} alt="pottery" className="img-style" />
           <div className="content-style">
             <table>
               <tr>
