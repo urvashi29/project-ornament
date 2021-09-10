@@ -46,7 +46,7 @@ const list = [{
 
 const searchFor = (shape, location, painter, technique, subTechnique, incription, date, collection, subject) => {
     return (x) => {
-        return (x.location.startsWith(location) || !location) && (x.shape.startsWith(shape) || !shape) && (x.painter.startsWith(painter) || !painter) && (x.technique.startsWith(technique) || !technique)  && (x.subTechnique.startsWith(subTechnique) || !subTechnique)  && (x.subject.startsWith(subject) || !subject)  && (x.collection.startsWith(collection) || !collection)  && (x.incription.startsWith(incription) || !incription) && (x.date.startsWith(date) || !date);
+        return (x.location.startsWith(location) || !location) && (x.shape.startsWith(shape) || !shape) && (x.painter.startsWith(painter) || !painter) && (x.technique.startsWith(technique) || !technique) && (x.subTechnique.startsWith(subTechnique) || !subTechnique) && (x.subject.startsWith(subject) || !subject) && (x.collection.startsWith(collection) || !collection) && (x.incription.startsWith(incription) || !incription) && (x.date.startsWith(date) || !date);
     }
 }
 
@@ -73,13 +73,27 @@ class Research extends Component {
         })
     }
 
+    handleReset = (e) => {
+        this.setState({
+            shape: '',
+            location: '',
+            painter: '',
+            subject: '',
+            technique: '',
+            subTechnique: '',
+            incription: '',
+            collection: '',
+            date: ''
+        })
+    }
+
 
     render() {
         const { shape,
             location,
-            painter, technique,subTechnique, incription, date, collection, subject } = this.state;
+            painter, technique, subTechnique, incription, date, collection, subject } = this.state;
 
-        const detailsList = details.length ? (details.filter(searchFor(shape, location, painter, technique,subTechnique, incription, date, collection, subject)).map((info) => {
+        const detailsList = details.length ? (details.filter(searchFor(shape, location, painter, technique, subTechnique, incription, date, collection, subject)).map((info) => {
             return (
                 <div className="card" key={info.citationNumber} id="cards">
                     <img src={info.img} className="card-img-top" alt="profile" />
@@ -106,15 +120,17 @@ class Research extends Component {
                     <div className="col-sm-5 col-md-8 col-lg-4 col-xl-4">
                         <h2>SEARCH DATABASE</h2>
                         <div className="left-div">
-                             {/*shape */}
+                            {/*shape */}
                             <div className="btn-group">
                                 <ul>
                                     <li className="search-items">
                                         SHAPE</li>
                                 </ul>
-                                <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
-                                    {this.state.shape !== '' ? (this.state.shape) : (<React.Fragment>{list[0].detail[0]}</React.Fragment>)}
-                                </button>
+                                <div className="div-right">
+                                    <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
+                                        {this.state.shape !== '' ? (this.state.shape) : (<React.Fragment>{list[0].detail[0]}</React.Fragment>)}
+                                    </button>
+                                </div>
                                 <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', borderLeft: 'none' }} className="btn btn-secondary btn-lg  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
                                 </button>
                                 <div className="dropdown-menu">
@@ -124,7 +140,7 @@ class Research extends Component {
                                         )
                                     })}
                                 </div>
-                            </div>\
+                            </div>
                             {/*location */}
                             <div className="btn-group">
                                 <ul>
@@ -155,9 +171,11 @@ class Research extends Component {
                                         PAINTER
                                     </li>
                                 </ul>
-                                <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
-                                    {this.state.painter !== '' ? (this.state.painter) : (<React.Fragment>{list[2].detail[0]}</React.Fragment>)}
-                                </button>
+                                <div className="div-right">
+                                    <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
+                                        {this.state.painter !== '' ? (this.state.painter) : (<React.Fragment>{list[2].detail[0]}</React.Fragment>)}
+                                    </button>
+                                </div>
                                 <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', borderLeft: 'none' }} className="btn btn-secondary btn-lg  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
                                 </button>
                                 <div className="dropdown-menu">
@@ -328,8 +346,13 @@ class Research extends Component {
                                 className="btn btn-warning">
                                 Search
                             </button>
+                            <button
+                                onClick={this.handleReset}
+                                type="button"
+                                className="btn btn-warning">
+                                Reset
+                            </button>
                         </div>
-
                     </div>
                     <div className="col-sm-7 col-md-4 col-lg-8 col-xl-8">
                         <div>{detailsList}</div>

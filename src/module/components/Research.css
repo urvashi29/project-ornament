@@ -31,6 +31,7 @@ h2 {
 
 .search-div {
 	text-align: center;
+	float: right;
 }
 
 .search-div button {
@@ -38,6 +39,7 @@ h2 {
 	border: none;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	margin-left: 10px;
 }
 
 .btn-group {
@@ -75,38 +77,50 @@ h2 {
 	  width: 120px;
   }
 
-@media (max-width: 2700px) {
+@media (min-width: 2700px) {
 	#cards {
 		margin: 30px 20px 20px 0;
 	}
 	
 }
 
-@media (max-width: 2500px) {
+@media (min-width: 2500px) {
 	#cards {
 		margin: 30px 20px 20px 0;
 	}
+	.div-right button {
+		width: 300px;
+	}
 }
 
-@media (max-width: 2309px) {
+@media (min-width: 2309px) {
 	#cards {
 		margin: 30px 20px 20px 0;
+	}
+	.div-right button {
+		width: 300px;
 	}
 }
 
 
-@media (max-width: 2000px) {
+@media (min-width: 2000px) {
 	#cards {
 		margin: 30px 20px 20px 0;
 	}
-}
 
-@media (max-width: 1789px) {
-	#cards {
-		margin: 30px 20px 20px 0;
+	.div-right button {
+		width: 300px;
 	}
 }
 
+@media (min-width: 1789px) {
+	#cards {
+		margin: 30px 20px 20px 0;
+	}
+	.div-right button {
+		width: 300px;
+	}
+}
 
 @media (max-width: 1709px) {
 	#cards {
@@ -143,27 +157,39 @@ h2 {
 	#cards {
 		margin-left: 20px;
 	}
+	.div-right button {
+		width: 80px;
+	}
+	.search-items {
+		margin-right: 10px;
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 639px) {
 	#cards {
 		margin-left: 20px;
 	}
+	.div-right button {
+		width: 80px;
+	}
+	.search-items {
+		margin-right: 10px;
+		font-size: 16px;
+	}
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 570px) {
 	#cards {
 		margin-left: 20px;
 	}
 }
 
 @media (max-width: 400px) {
-
 }
 
 @media (max-width: 290px) {
-
 }
 
 
