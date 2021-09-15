@@ -76,6 +76,7 @@ h2 {
 
   .div-right button {
 	  width: 120px;
+	  font-size: 12px;
   }
 
 @media (min-width: 2700px) {
@@ -167,24 +168,33 @@ h2 {
 	}
 }
 
-@media (max-width: 639px) {
+@media (max-width: 680px) {
 	#cards {
-		margin-left: 20px;
+		margin-left: 70px;
 	}
 	.div-right button {
-		width: 80px;
+		width: 60px;
 	}
 	.search-items {
 		font-size: 16px;
 	}
 }
 
-
-@media (max-width: 570px) {
+@media (max-width: 646px) {
 	#cards {
-		margin-left: 20px;
+		margin-left: 70px;
+	}
+	.div-right button {
+		width: 60px;
+	}
+	.search-items {
+		font-size: 16px;
+	}
+	.div-right {
+		margin-left: 10px;
 	}
 }
+
 
 @media (max-width: 400px) {
 }

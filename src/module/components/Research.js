@@ -128,7 +128,7 @@ class Research extends Component {
                                 </ul>
                                 <div className="div-right">
                                     <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
-                                        {this.state.shape !== '' ? (this.state.shape) : (<React.Fragment>{list[0].detail[0]}</React.Fragment>)}
+                                        {this.state.shape !== '' ? (this.state.shape) : (<React.Fragment>{'Select Shape'}</React.Fragment>)}
                                     </button>
                                 </div>
                                 <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', borderLeft: 'none' }} className="btn btn-secondary btn-lg  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
@@ -150,7 +150,7 @@ class Research extends Component {
                                 </ul>
                                 <div className="div-right">
                                     <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
-                                        {this.state.location !== '' ? (this.state.location) : (<React.Fragment>{list[1].detail[0]}</React.Fragment>)}
+                                        {this.state.location !== '' ? (this.state.location) : (<React.Fragment>{'Select Location'}</React.Fragment>)}
                                     </button>
                                 </div>
 
@@ -173,7 +173,7 @@ class Research extends Component {
                                 </ul>
                                 <div className="div-right">
                                     <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
-                                        {this.state.painter !== '' ? (this.state.painter) : (<React.Fragment>{list[2].detail[0]}</React.Fragment>)}
+                                        {this.state.painter !== '' ? (this.state.painter) : (<React.Fragment>{'Select Painter'}</React.Fragment>)}
                                     </button>
                                 </div>
                                 <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', borderLeft: 'none' }} className="btn btn-secondary btn-lg  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
@@ -197,7 +197,7 @@ class Research extends Component {
                                 </ul>
                                 <div className="div-right">
                                     <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
-                                        {this.state.subject !== '' ? (this.state.subject) : (<React.Fragment>{list[3].detail[0]}</React.Fragment>)}
+                                        {this.state.subject !== '' ? (this.state.subject) : (<React.Fragment>{'Select Subject'}</React.Fragment>)}
                                     </button>
                                 </div>
 
@@ -222,7 +222,7 @@ class Research extends Component {
                                 </ul>
                                 <div className="div-right">
                                     <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
-                                        {this.state.technique !== '' ? (this.state.technique) : (<React.Fragment>{list[4].detail[0]}</React.Fragment>)}
+                                        {this.state.technique !== '' ? (this.state.technique) : (<React.Fragment>{'Select Technique'}</React.Fragment>)}
                                     </button>
                                 </div>
 
@@ -248,7 +248,7 @@ class Research extends Component {
                                 </ul>
                                 <div className="div-right">
                                     <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
-                                        {this.state.subTechnique !== '' ? (this.state.subTechnique) : (<React.Fragment>{list[5].detail[0]}</React.Fragment>)}
+                                        {this.state.subTechnique !== '' ? (this.state.subTechnique) : (<React.Fragment>{'Select Sub Technique'}</React.Fragment>)}
                                     </button>
                                 </div>
 
@@ -273,7 +273,7 @@ class Research extends Component {
                                 </ul>
                                 <div className="div-right">
                                     <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
-                                        {this.state.incription !== '' ? (this.state.incription) : (<React.Fragment>{list[6].detail[0]}</React.Fragment>)}
+                                        {this.state.incription !== '' ? (this.state.incription) : (<React.Fragment>{'Select Incription'}</React.Fragment>)}
                                     </button>
                                 </div>
 
@@ -298,7 +298,7 @@ class Research extends Component {
                                 </ul>
                                 <div className="div-right">
                                     <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
-                                        {this.state.collection !== '' ? (this.state.collection) : (<React.Fragment>{list[7].detail[0]}</React.Fragment>)}
+                                        {this.state.collection !== '' ? (this.state.collection) : (<React.Fragment>{'Select Collection'}</React.Fragment>)}
                                     </button>
                                 </div>
 
@@ -323,7 +323,7 @@ class Research extends Component {
                                 </ul>
                                 <div className="div-right">
                                     <button type="button" style={{ height: '40px', backgroundColor: '#1E1E1E', overflow: 'hidden' }} className="btn btn-secondary">
-                                        {this.state.date !== '' ? (this.state.date) : (<React.Fragment>{list[8].detail[0]}</React.Fragment>)}
+                                        {this.state.date !== '' ? (this.state.date) : (<React.Fragment>{'Select Date'}</React.Fragment>)}
                                     </button>
                                 </div>
 
