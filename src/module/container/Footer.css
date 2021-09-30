@@ -23,6 +23,7 @@
   color: orange;
   font-size: 22px;
 }
+
 .term-policy {
   flex: 1;
   display: flex;
@@ -30,6 +31,13 @@
   align-items: left;
   list-style-type: none;
 }
+
+.term-policy input{
+  border: 3px solid #F0AA11;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
 .term-policy > li > a {
   color: orange;
 }
@@ -53,6 +61,8 @@
 }
 
 .button-submit{
-  background-color: orange;
-  margin: 10px;
+  border: 2px solid #F0AA11;
+  background-color: #F0AA11;
+  width: 100px;
+  align-self: center;
 }

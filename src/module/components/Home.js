@@ -13,6 +13,21 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <div className="left-section">
+        <div className="image-wrapper">
+          <Carousel width="80%" showThumbs="false" showStatus="false">
+            {arr.map((item) => {
+              return (
+                <div className="one-img-wrapper">
+                  <img src={item} alt="crouser-images" className="im" />
+                </div>
+              );
+            })}
+          </Carousel>
+
+        </div>
+
+      </div>
+      <div className="right-section">
         <div className="description">
           {" "}
           <p>
@@ -23,44 +38,32 @@ const Home = () => {
             specially showcases the Greek vase-paintings and archaeology of
             South Italy and Sicily. There are also holdings in Etruscan and
             other Mediterranean cultures.
+            <br />
+            <br />
+            Since 1995, the Trendall Research Centre has maintained the library
+            and archive of one of the most distinguished Mediterranean
+            archaeologist A.D. Trendall and is currently digitizing the
+            photographic archive. Both the library and the archive contain
+            resources of ancient Mediterranean archelogy recognized by scholars
+            around the globe and the digitization of it will make it available to
+            everyone and will attract scholars around the world to get resources.
+            The photographic archive of South Italian vases in particular is
+            unique and such resource does not exist anywhere else in the world.
           </p>
-          <p>
-            {" "}
-            Available to academic staff, honours and graduate students by
-            appointment. For appointment, contact the Trendall Research Centre:
-            Trendall@latrobe.edu.au{" "}
-          </p>
+          {" "}
+          Available to academic staff, honours and graduate students by
+          appointment.
+          <br />
+          For appointment, contact the Trendall Research Centre:
+          Trendall@latrobe.edu.au{" "}
           <p>
             Under the terms of the bequest, books are not available for loan and
             may only consulted in the Trendall Research Centre.{" "}
           </p>
+
         </div>
       </div>
-      <div className="right-section">
-        <div className="image-wrapper">
-          <Carousel width="80%" showThumbs="false" showStatus="false">
-            {arr.map((item) => {
-              return (
-                <div className="one-img-wrapper">
-                  <img src={item} alt="crouser-images" />
-                </div>
-              );
-            })}
-          </Carousel>
-          <div className="image-description">
-          Since 1995, the Trendall Research Centre has maintained the library
-          and archive of one of the most distinguished Mediterranean
-          archaeologist A.D. Trendall and is currently digitizing the
-          photographic archive. Both the library and the archive contain
-          resources of ancient Mediterranean archelogy recognized by scholars
-          around the globe and the digitization of it will make it available to
-          everyone and will attract scholars around the world to get resources.
-          The photographic archive of South Italian vases in particular is
-          unique and such resource does not exist anywhere else in the world.
-        </div>
-        </div>
-        
-      </div>
+
 
     </div>
   );

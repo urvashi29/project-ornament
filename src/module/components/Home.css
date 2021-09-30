@@ -4,7 +4,8 @@
     font-size: 16px;
     color: white;
   }
-  .left-section {
+
+  .right-section {
     padding: 20px;
     display: flex;
   }
@@ -12,18 +13,22 @@
   .description p {
     padding-bottom: 20px;
   }
-  .right-section {
+  
+  .left-section {
     display: flex;
     flex-direction: column;
   }
+
   .image-wrapper {
     max-width: 800px;
+    margin-left: 40px;
   }
 
-  .image-description {
+  /* .image-description {
     text-align: center;
     padding: 0px 10px 20px 10px;
-  }
+  } */
+
   .carousel .slider-wrapper {
     padding: 50px;
     overflow: hidden;
@@ -31,6 +36,7 @@
     width: 60%;
     transition: height 0.15s ease-in;
   }
+
   .carousel .thumb img {
     vertical-align: top;
     width: 100%;
