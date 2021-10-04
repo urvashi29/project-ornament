@@ -8,7 +8,14 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px;
   box-shadow: 0 0 6px 6px #0d0d0e;
+  font-size: 17px;
 }
+
+.subscribe {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -21,7 +28,7 @@
 }
 .contact > ul > li:nth-child(1) {
   color: orange;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .term-policy {
@@ -46,7 +53,54 @@
 }
 .copyright {
   font-style: italic;
+  margin-bottom: 10px;
 }
+
+.fa {
+  padding: 4px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.5;
+  background-color: white;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #8a3ab9;
+  color: white;
+}
+
 @media (max-width: 648px) {
   .footer {
     display: flex;
@@ -66,3 +120,14 @@
   width: 100px;
   align-self: center;
 }
+
+.button-sub {
+  border-top:  none;
+  border-left: none;
+  border-bottom: 1.5px solid#F0AA11;
+  background-color: #F0AA11;
+  width: 100px;
+  align-self: center;
+}
+
+
