@@ -14,15 +14,22 @@ const Home = () => {
     <div className="home-wrapper">
       <div className="left-section">
         <div className="image-wrapper">
-          <Carousel width="80%" showThumbs="false" showStatus="false">
-            {arr.map((item) => {
-              return (
-                <div className="one-img-wrapper">
-                  <img src={item} alt="crouser-images" className="im" />
-                </div>
-              );
-            })}
-          </Carousel>
+        <Carousel
+        width='70%'
+        showThumbs={false}
+        showStatus={false}
+        autoPlay={true}
+        infiniteLoop={true}
+      >
+        {arr.map((item) => {
+          return (
+            <div className='one-img-wrapper'>
+              <img src={item} alt='crouser-images' />
+              {/* <p className="legend">Legend 1</p> */}
+            </div>
+          );
+        })}
+      </Carousel>
 
         </div>
 

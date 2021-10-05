@@ -30,6 +30,9 @@ class Dashboard extends Component {
                             <NavLink className="nav-item" to="/aboutus">
                                 About Us
                             </NavLink>
+                            <NavLink className="nav-item" to="/contactus">
+                                Contact Us
+                            </NavLink>
                         </ul>
                     </div>
                 </nav>

@@ -6,6 +6,8 @@ import Research from "./module/components/Research";
 import Home from "./module/components/Home";
 import ResearchDetails from "./module/components/ResearchDetails";
 import Footer from "./module/container/Footer";
+import Contact from "./module/components/Contact";
+
 const Routes = () => {
     return (
         <BrowserRouter>
@@ -15,6 +17,7 @@ const Routes = () => {
             <Route exact path="/research" component={Research}/>
             <Route exact path="/research/:citationNumber" component={ResearchDetails}/>
             <Route exact path="/aboutus" component={About} />  
+            <Route exact path="/contactus" component={Contact} />  
         <Footer />
             </BrowserRouter>
     )
