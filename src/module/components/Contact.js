@@ -66,7 +66,7 @@ const Contact = () => {
 						</p>
 						<h1>Enquire Now</h1>
 						<p>
-							If you prefer to email you can conatact us via the form
+							If you prefer to email you can contact us via the form
 							below.
 							<br /> Tell us about your experience or send us any queries.
 						</p>
