@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Footer.css";
 import apiKey from "../../emailkey";
+import {Link} from 'react-router-dom';
 import { init } from 'emailjs-com';
 import emailjs from "emailjs-com"
 init("user_xhQE8RcVRRuqKv43qLfqB");
@@ -56,24 +57,24 @@ const Footer = () => {
           <button className="button-sub" value="submit">Subscribe</button>
         </form>
         <li>
-          <a href="https://latrobe.edu.au" target="_blank">
+          <Link href="https://latrobe.edu.au" target="_blank">
             Link to Latrobe
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://latrobe.edu.au/library" target="_blank">
+          <Link href="https://latrobe.edu.au/library" target="_blank">
             Link to Latrobe Library
-          </a>
+          </Link>
         </li>
         <li>Terms of use</li>
         <li>Privacy Policy</li>
         <li className="copyright">&copy; 2021 Rights Reserved</li>
         <div>
-          <a href="https://www.facebook.com/latrobe" class="fa fa-facebook" target="_blank"></a>
-          <a href="https://www.linkedin.com/school/la-trobe-university/" class="fa fa-linkedin" target="_blank"></a>
-          <a href="https://www.youtube.com/channel/UCiooRETYlTQuoG8iWIxWPWg" class="fa fa-youtube" target="_blank"></a>
-          <a href="https://www.instagram.com/latrobeuni/" class="fa fa-instagram" target="_blank"></a>
-          <a href="https://www.pinterest.com/pin/77757531057016278/" class="fa fa-pinterest" target="_blank"></a>
+          <Link href="https://www.facebook.com/latrobe" class="fa fa-facebook" target="_blank"></Link>
+          <Link href="https://www.linkedin.com/school/la-trobe-university/" class="fa fa-linkedin" target="_blank"></Link>
+          <Link href="https://www.youtube.com/channel/UCiooRETYlTQuoG8iWIxWPWg" class="fa fa-youtube" target="_blank"></Link>
+          <Link href="https://www.instagram.com/latrobeuni/" class="fa fa-instagram" target="_blank"></Link>
+          <Link href="https://www.pinterest.com/pin/77757531057016278/" class="fa fa-pinterest" target="_blank"></Link>
         </div>
       </ul>
 
