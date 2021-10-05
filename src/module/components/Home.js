@@ -58,11 +58,12 @@ const Home = () => {
             unique and such resource does not exist anywhere else in the world.
           </p>
           {" "}
+          <p>
           Available to academic staff, honours and graduate students by
           appointment.
-          <br />
+          </p>
           For appointment, contact the Trendall Research Centre:
-          Trendall@latrobe.edu.au{" "}
+          Trendall@latrobe.edu.au
           <p>
             Under the terms of the bequest, books are not available for loan and
             may only consulted in the Trendall Research Centre.{" "}
