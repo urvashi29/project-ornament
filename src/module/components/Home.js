@@ -62,8 +62,10 @@ const Home = () => {
           Available to academic staff, honours and graduate students by
           appointment.
           </p>
+          <p>
           For appointment, contact the Trendall Research Centre:
           Trendall@latrobe.edu.au
+          </p>
           <p>
             Under the terms of the bequest, books are not available for loan and
             may only consulted in the Trendall Research Centre.{" "}
