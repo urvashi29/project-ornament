@@ -57,24 +57,24 @@ const Footer = () => {
           <button className="button-sub" value="submit">Subscribe</button>
   </form>
         <li>
-          <Link href="https://latrobe.edu.au" target="_blank">
+          <a href="https://latrobe.edu.au" target="_blank">
             Link to Latrobe
-          </Link>
+          </a>
         </li>
         <li>
-          <Link href="https://latrobe.edu.au/library" target="_blank">
+          <a href="https://latrobe.edu.au/library" target="_blank">
             Link to Latrobe Library
-          </Link>
+          </a>
         </li>
         <li>Terms of use</li>
         <li>Privacy Policy</li>
         <li className="copyright">&copy; 2021 Rights Reserved</li>
         <div>
-          <Link href="https://www.facebook.com/latrobe" class="fa fa-facebook" target="_blank"></Link>
-          <Link href="https://www.linkedin.com/school/la-trobe-university/" class="fa fa-linkedin" target="_blank"></Link>
-          <Link href="https://www.youtube.com/channel/UCiooRETYlTQuoG8iWIxWPWg" class="fa fa-youtube" target="_blank"></Link>
-          <Link href="https://www.instagram.com/latrobeuni/" class="fa fa-instagram" target="_blank"></Link>
-          <Link href="https://www.pinterest.com/pin/77757531057016278/" class="fa fa-pinterest" target="_blank"></Link>
+          <a href="https://www.facebook.com/latrobe" class="fa fa-facebook" target="_blank"></a>
+          <a href="https://www.linkedin.com/school/la-trobe-university/" class="fa fa-linkedin" target="_blank"></a>
+          <a href="https://www.youtube.com/channel/UCiooRETYlTQuoG8iWIxWPWg" class="fa fa-youtube" target="_blank"></a>
+          <a href="https://www.instagram.com/latrobeuni/" class="fa fa-instagram" target="_blank"></a>
+          <a href="https://www.pinterest.com/pin/77757531057016278/" class="fa fa-pinterest" target="_blank"></a>
         </div>
       </ul>
 
